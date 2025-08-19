@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>Venue Client PWA</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icon-192.png">
+  <script>
+    // Load environment-specific config synchronously
+    const env = new URLSearchParams(window.location.search).get('env') || 'dev';
+    document.write(`<script src="/config/${env}.js"><\/script>`);
+  </script>
+  <script type="module" crossorigin src="/assets/index-23748e00.js"></script>
+  <link rel="stylesheet" href="/assets/index-2c80f218.css">
+</head>
+<body>
+  <div id="app"></div>
+  
+</body>
+</html>
