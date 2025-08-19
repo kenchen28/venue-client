@@ -1,5 +1,5 @@
 # Build stage
-FROM docker-env-local.artifacts.tabdigital.com.au/tabdigital-node-18:latest AS build
+FROM node:18-alpine AS build
 WORKDIR /app
 ENV npm_config_LOGLEVEL=error
 

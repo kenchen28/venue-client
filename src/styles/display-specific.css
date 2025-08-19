@@ -1,0 +1,14 @@
+/* Hide Next Race button on secondary displays */
+body[data-display="2"] .go-to-next-race,
+body[data-display="2"] [data-test-hook-go-to-next-race] {
+  display: none !important;
+}
+
+/* You can add other display-specific rules here */
+body[data-display="2"] .primary-only {
+  display: none !important;
+}
+
+body[data-display="1"] .secondary-only {
+  display: none !important;
+}
